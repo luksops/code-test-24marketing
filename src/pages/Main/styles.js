@@ -11,16 +11,37 @@ export const Container = styled.div`
 	& > p {
 		font-weight: bold;
 		padding: 10px 0px;
-		font-size: 16px;
+		font-size: 1.2rem;
+		color: #847e3f;
 	}
 
 	span {
 		p {
 			padding: 10px 0px;
+			font-size: 0.8rem;
 		}
 
 		p:nth-child(even) {
-			background-color: #eee;
+			background-color: #847e3f40;
+		}
+	}
+`;
+export const ButtonContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+
+	button {
+		padding: 6px 12px;
+		margin: 20px 3px 0;
+		background-color: #847e3f;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+
+		&:disabled {
+			opacity: 0.5;
+			cursor: not-allowed;
 		}
 	}
 `;

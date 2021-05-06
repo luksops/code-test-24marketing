@@ -11,15 +11,17 @@ export default createGlobalStyle`
   body {
   background: #191920;
   -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
   #root {
       max-width: 1020px;
       min-height: 70vh;
       margin: 0 auto;
-      padding: 50px 0px;
+      padding: 100px 0px;
       display: flex;
 
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
 
     }
